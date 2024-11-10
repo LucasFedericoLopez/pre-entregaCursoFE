@@ -1,0 +1,1140 @@
+/*
+TITULOS: font-family: "Oxanium", sans-serif;
+SUBTITULOS: font-family: "Exo 2", sans-serif;
+NAV:  font-family: "Titillium Web", sans-serif;
+PARRAFO:   font-family: "Crimson Text", serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+html,
+body {
+    background-clip: border-box;
+    background-size: 100% 100%;
+    background-color: black;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    padding: 5px 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo img {
+    max-width: 80%;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #FFEB00;
+    font-size: 18px;
+}
+
+.nav-inferior {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    margin-left: 20px;
+}
+
+.nav-inferior h2,
+.nav-inferior h4 {
+    margin: 0;
+}
+
+.nav-inferior h2 {
+    font-size: 20px;
+}
+
+.nav-inferior h4 {
+    font-size: 14px;
+}
+
+.menu-desplegable {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-desplegable div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.titulo1 {
+    display: flex;
+    color: #FFEB00;
+    letter-spacing: 0.5vw;
+    font-size: 6vw;
+    text-shadow: 2px 2px 5px rgba(244, 248, 7, 0.5);
+    font-family: "Oxanium", sans-serif;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.titulo11 {
+    display: flex;
+    color: #FFEB00;
+    letter-spacing: 0.5vw;
+    font-size: 6vw;
+    text-shadow: 2px 2px 5px rgba(244, 248, 7, 0.5);
+    font-family: "Oxanium", sans-serif;
+    justify-content: center;
+}
+
+
+.btn1 {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.btn1 button {
+    color: black;
+    background-color: #FFEB00;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1.3vw;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.btn1 button:hover {
+    transform: scale(1.03);
+    border-radius: 30px;
+}
+
+.main-about {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.about-izquierda {
+    flex: 1;
+    padding: 20px;
+}
+
+.titulo2 {
+    margin: 0px 0 30px 0;
+    letter-spacing: 0.3vw;
+    font-size: 3rem;
+    font-family: "Exo 2", sans-serif;
+    color: #a3fcff;
+}
+
+.span2 {
+    display: block;
+}
+
+.logo-pequeño1 {
+    margin-top: 20px;
+}
+
+.logo-pequeño1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: "Crimson Text", serif;
+    color: white;
+}
+
+.imagen-about {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-about img {
+    float: right;
+    max-width: 70%;
+    height: auto;
+}
+
+#productos {
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.subtitulo1 {
+    display: flex;
+    margin-top: 100px;
+}
+
+.span3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.8rem;
+    background-color: #FFEB00;
+    border-radius: 30px 60px;
+    padding: 0.4em;
+}
+
+.card-container1 {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.card1 {
+    background-color: #FFEB00;
+    flex-grow: 1;
+    flex-basis: 200;
+    border-radius: 10px;
+    width: 250px;
+    height: 470px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card1:hover {
+    transform: scale(1.05);
+}
+
+.figure-card {
+    flex: 1;
+    margin: 0;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-card {
+    padding: 10px;
+    text-align: center;
+}
+
+.subtitulo-card {
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    justify-content: center;
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+}
+
+#reseñas {
+    margin: 0;
+    padding: 20px 0;
+    background-color: black;
+}
+
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card3 {
+    background-color: #FFEB00;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card3 h2 {
+    margin-bottom: 20px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.imagen-reseña {
+    width: auto;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.texto-reseña {
+    font-family: "Crimson Text", serif;
+    margin: 0;
+    font-size: 16px;
+    color: black;
+}
+
+.subtitulo-pag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    margin-left: 20px;
+    color: black;
+    font-family: "Exo 2", sans-serif;
+}
+
+.subtitulo-pag2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 20px;
+    color: black;
+    font-family: "Exo 2", sans-serif;
+}
+
+.span4 {
+    background-color: #FFEB00;
+    padding: 10px;
+    border-radius: 30px 60px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+.card-container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 320px;
+    flex: 1 1 calc(33.333% - 20px);
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #0B192C;
+    position: relative;
+    font-family: "Exo 2", sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02)
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    background-image: linear-gradient(109.6deg, rgba(24, 138, 141, 1) 11.2%, rgba(96, 221, 142, 1) 91.1%);
+}
+
+.card-img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    background-image: linear-gradient(76.3deg, rgba(44, 62, 78, 1) 12.6%, rgba(69, 103, 131, 1) 82.8%);
+}
+
+.card-img3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    background-image: linear-gradient(358.7deg, rgba(42, 136, 157, 1) 1.7%, rgba(122, 197, 214, 1) 51.1%, rgba(211, 232, 242, 1) 95.5%);
+}
+
+.card-body {
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    color: #E1F7F5;
+    text-shadow:
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black,
+        1px 1px 0px black;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.card:hover .card-body {
+    right: 0;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    font-family: "Crimson Text", serif;
+}
+
+.card-btn {
+    color: black;
+    background: #03AED2;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 1s;
+    font-family: "Exo 2", sans-serif;
+}
+
+.card-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.body-inv {
+    background-color: #181C14;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.icono-superior {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+
+.contenido {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    max-width: 1000px;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+.img-central {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-central img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgb(94, 91, 91));
+}
+
+.contenedor-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.descripcion {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Exo 2", sans-serif;
+    color: #FFEB00;
+    font-size: 2rem;
+}
+
+.descripcion span {
+    display: block;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-value {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #FFEB00;
+}
+
+.rating {
+    direction: rtl;
+    display: inline-flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: gold;
+}
+
+.rating input:checked~label {
+    color: gold;
+}
+
+.rating input:checked+label:hover,
+.rating input:checked+label:hover~label {
+    color: lightgray;
+}
+
+.precio {
+    margin-top: 20px;
+}
+
+.comprar-cuotas {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4CC9FE;
+    text-align: center;
+}
+
+.boton-carrito {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.boton-carrito button {
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Exo 2", sans-serif;
+    color: black;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+    transition: transform 0.3s;
+}
+
+.boton-carrito button:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(0.95);
+}
+
+.icono-inferior {
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+}
+
+.icono-superior img,
+.icono-inferior img {
+    width: 50px;
+    height: auto;
+}
+
+.descripcion-producto {
+    background-color: #181C14;
+    padding: 20px;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.especificaciones {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.descripcion-producto h2 {
+    font-size: 2rem;
+    color: #FFEB00;
+    margin-bottom: 15px;
+    font-family: "Exo 2", sans-serif;
+}
+
+.contenedor-especificaciones {
+    background-color: #181C14;
+    border: 1px solid #FFEB00;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.descripcion-detallada {
+    border: 1px solid #FFEB00;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s;
+}
+
+.descripcion-detallada:hover {
+    box-shadow: 0 4px 15px rgb(238, 255, 0);
+}
+
+.descripcion-detallada h3 {
+    font-size: 1.5rem;
+    font-family: "Exo 2", sans-serif;
+    color: #FFEB00;
+    margin-bottom: 10px;
+}
+
+.descripcion-detallada p {
+    font-size: 1rem;
+    font-family: "Crimson Text", serif;
+    color: white;
+}
+
+.imagenes,
+.imagenes2,
+.imagenes3,
+.imagenes4 {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+
+.imagen-principal,
+.imagen-secundaria {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.imagen-principal {
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgb(221, 89, 203));
+}
+
+.imagen-secundaria {
+    filter: drop-shadow(0 0 10px rgb(162, 243, 56));
+}
+
+.imagenes2 .imagen-principal {
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+.imagenes2 .imagen-secundaria {
+    filter: drop-shadow(0 0 10px rgb(0, 247, 255));
+}
+
+.imagenes3 .imagen-principal {
+    filter: drop-shadow(0 0 10px rgb(209, 180, 12));
+}
+
+.imagenes3 .imagen-secundaria {
+    filter: drop-shadow(0 0 10px rgb(167, 141, 236));
+}
+
+.imagenes4 .imagen-principal {
+    filter: drop-shadow(0 0 10px rgb(127, 125, 158));
+}
+
+.imagenes4 .imagen-secundaria {
+    filter: drop-shadow(0 0 10px rgb(127, 125, 158));
+}
+
+
+
+.informacion-adicional {
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.informacion-adicional h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+    font-family: "Exo 2", sans-serif;
+}
+
+.informacion-adicional p {
+    font-size: 1rem;
+    font-family: "Crimson Text", serif;
+    color: #555;
+}
+
+.form-container {
+    margin: 40px 0 0 10px;
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(68.6deg, rgba(79, 183, 131, 1) 14.4%, rgba(254, 235, 151, 1) 92.7%);
+    border-right: 1px solid #ccc;
+}
+
+.digital-sale {
+    height: 100vh;
+    margin: 10px 10px 0 0;
+    width: 40%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+.digital-sale h2 {
+    border-radius: 60px;
+    font-size: 8rem;
+    font-family: "Exo 2", sans-serif;
+    color: #FFEB00;
+}
+.span5 {
+    display: block;
+}
+.digital-sale h2:hover {
+    text-shadow: rgba(251, 251, 251, 0.81) 0px 0px 24px;
+    cursor: crosshair;
+}
+.digital-sale img {
+    width: 40%;
+    height: auto;
+}
+legend {
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+fieldset {
+    border: none;
+
+}
+
+form {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+label {
+    font-family: "Crimson Text", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+    font-family: "Crimson Text", serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+form h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5rem;
+}
+
+.form-container input[type="submit"],
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+input[type="submit"] {
+    background-color: #FFEB00;
+    font-family: "Crimson Text", serif;
+    font-size: 1rem;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.form-container button {
+    margin: 0 0 0 10px;
+    background-color: #FF4545;
+    font-family: "Crimson Text", serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.form-container button:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+}
+.pie-pagina {
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    color: #f9f9f9;
+    font-family: "Titillium Web", sans-serif;
+  }
+  
+  .pie-pagina section {
+    padding: 0 50px;
+  }
+  
+  section.top {
+    padding-top: 30px;
+    margin-bottom: 48px;
+  }
+  
+  section.top img {
+    display: block;
+    height: 30px;
+    margin: 0 0 30px;
+  }
+  
+  section.top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.top ul li a {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(255 255 255 / 90%);
+  }
+  
+  section.top h3 {
+    color: rgb(255 255 255 / 40%);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  section.bottom {
+    padding-top: 10px;
+    border-top: 2px solid rgb(255 255 255 / 10%);
+    color: rgb(255 255 255 / 40%);
+    font-size: 13px;
+  }
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgba(15, 2, 2, 1);
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 15px;
+    }
+
+    .nav-inferior {
+        margin-right: 20px;
+    }
+
+    .menu-desplegable {
+        display: block;
+    }
+
+    .nav-active .nav-links {
+        display: flex;
+    }
+
+    .logo img {
+        max-width: 50%;
+    }
+
+    .titulo1 {
+        font-size: 8vw;
+        letter-spacing: 1vw;
+    }
+
+    .btn button {
+        font-size: 4vw;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .main-about {
+        flex-direction: column;
+    }
+
+    .imagen-about {
+        width: 100%;
+    }
+
+    .titulo2 {
+        font-size: 2rem;
+    }
+
+    .about {
+        font-size: 0.9rem;
+    }
+
+    .card-container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .subtitulo-pag {
+        margin-top: 110px;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .subtitulo-pag2 {
+        margin-top: 60px;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .span4 {
+        font-size: 24px;
+        padding: 8px;
+        border-radius: 20px 40px;
+    }
+
+    .card-container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-title {
+        font-size: 10px;
+    }
+
+    .card-sub-title {
+        font-size: 12px;
+    }
+
+    .card-info {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 10px 0;
+    }
+
+    .card-btn {
+        width: 80px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .card3 {
+        border-radius: 10px;
+        width: 80%;
+        padding: 15px;
+    }
+
+    .texto-reseña {
+        font-size: 14px;
+    }
+
+    .contenedor-descripcion {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .imagenes {
+        flex: 1 0 100%;
+        margin-top: 20px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icono-superior {
+        left: 5%;
+    }
+
+    .icono-inferior {
+        right: 5%;
+    }
+
+    .img-central {
+        margin: 0;
+    }
+
+    .descripcion {
+        font-size: 1.5rem;
+    }
+
+    .boton-carrito {
+        margin-top: 20px;
+    }
+
+    .descripcion-detallada {
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        width: 90%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .digital-sale {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 30px;
+    }
+    .digital-sale h2 {
+        font-size: 6rem;
+    }
+    footer article {
+        flex-direction: row;
+        min-height: 140px;
+        margin: -70px 20px 20px;
+        padding: 30px 50px 30px;
+      }
+    
+      footer article button {
+        width: auto;
+        padding: 0 20px 0 24px;
+      }
+    
+      section.top ul {
+        grid-template-columns: repeat(4, 1fr);
+        padding-right: 0;
+      }
+
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        height: 450px;
+    }
+
+    .card-title {
+        font-size: 40px;
+    }
+
+    .card-info {
+        font-size: 14px;
+        margin: 30px 0;
+    }
+    .form-container {
+        width: 90%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .digital-sale {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 30px;
+    }
+    .digital-sale h2 {
+        font-size: 6rem;
+    }
+}

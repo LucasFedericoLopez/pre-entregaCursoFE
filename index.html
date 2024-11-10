@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalXpress</title>
+    <link rel="icon" href="img/icono.png" type="imagen/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/icono.png" alt="Logo DigitalXpress"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-inferior">
+                <h2>DIGITAL</h2>
+                <h4>XPRESS INC.</h4>
+            </div>
+            <div class="menu-desplegable">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <h1 class="titulo1">DIGITAL</h1>
+        <h1 class="titulo11">XPRESS</h1>
+        <div class="btn1">
+            <a href="pages/sobrenosotros.html" target="_blank"><button>About us</button></a>
+        </div>
+    </header>
+    <main>
+        <article id="productos">
+            <h2 class="subtitulo1"><span class="span3">PRODUCTOS</span></h2>
+            <div class="card-container1">
+                <div class="card1">
+                    <figure class="figure-card">
+                        <a href="pages/smartphones.html"><img src="img/iphone15-removebg-preview.png"
+                                alt="iPhone 15"></a>
+                    </figure>
+                    <footer class="footer-card">
+                        <h4 class="subtitulo-card">Smartphones</h4>
+                        </footer">
+                </div>
+                <div class="card1">
+                    <figure class="figure-card">
+                        <a href="pages/pcs.html"><img src="img/pc-removebg-preview.png" alt="PC GAMER"></a>
+                    </figure>
+                    <footer class="figure-card">
+                        <h4 class="subtitulo-card">Notebooks y PC'S</h4>
+                    </footer>
+                </div>
+                <div class="card1">
+                    <figure class="figure-card">
+                        <a href="pages/hardware.html"><img src="img/hardware-removebg-preview.png"
+                                alt="Hardware Gamer"></a>
+                    </figure>
+                    <footer class="footer-card">
+                        <h4 class="subtitulo-card">Hardware Gamer</h4>
+                    </footer>
+                </div>
+            </div>
+        </article>
+        <article id="reseñas">
+            <h2 class="subtitulo1"><span class="span3">RESEÑAS</span></h2>
+            <div class="grid-container">
+                <div class="card3">
+                    <img src="img/reseña1.jpg" alt="Persona 1" class="imagen-reseña">
+                    <h2>Sofía Fernández</h2>
+                    <p class="texto-reseña"> <span>"Tecnología de
+                        primera"</span>
+                    DigitalXpress tiene lo
+                    último en gadgets y
+                    dispositivos. Encontré
+                    justo lo que buscaba y el
+                    proceso de compra fue
+                    sin complicaciones. ¡Cinco
+                    estrellas para ellos!
+                    </p>
+                </div>
+                <div class="card3">
+                    <img src="/img/reseña2.jpg" alt="Persona 2" class="imagen-reseña">
+                    <h2>Lucas Ramírez</h2>
+                    <p class="texto-reseña"><span>"Gran variedad y
+                        buenos precios"</span>
+                    Me sorprendió la cantidad
+                    de productos tecnológicos
+                    que tienen en DigitalXpress.
+                    Los precios son muy
+                    competitivos y el envío fue
+                    rápido. Definitivamente
+                    volveré a comprar.</p>
+                </div>
+                <div class="card3">
+                    <img src="img/reseña3.jpg" alt="Persona 3" class="imagen-reseña">
+                    <h2>Diego Martínez</h2>
+                    <p class="texto-reseña"><span>"Excelente experiencia
+                            de compra"</span>
+                        Compré un smartphone en
+                        DigitalXpress y todo fue súper
+                        rápido y sencillo. El producto
+                        llegó en perfecto estado y el
+                        servicio al cliente respondió
+                        todas mis dudas.</p>
+                </div>
+            </div>
+        </article>
+        <article id="contacto">
+            <h2 class="subtitulo1"><span class="span3">CONTACTANOS</span></h2>
+            <form class="form-container"action="https://formspree.io/f/manyjqpd" method="post">
+                <fieldset>
+                    <legend>Datos De Contacto</legend>
+                    <label for="nombre">Nombre</label>
+                    <input size="30" type="text" name="nombre" id="" maxlength="20" placeholder="Nombre Completo..."
+                        required>
+                    <label for="apellido">Apellido</label>
+                    <input size="30" type="text" type="text" name="apellido" id="" maxlength="20"
+                        placeholder="Apellido..." required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="" placeholder="Direccion e-mail..." required>
+                    <label for="cod-area">Codigo de área</label>
+                    <input type="number" name="cod-area" id="" maxlength="5" required>
+                    <label for="telefono">Telefono</label>
+                    <input type="number" name="telefono" id="">
+                </fieldset>
+                <label for="texto_consulta"></label>
+                <textarea name="texto_consulta" id="" maxlength="300" rows="5" cols="30"
+                    placeholder="Pone aca tu consulta..." required></textarea> <br><br>
+                <h3>Terminos y condiciones</h3>
+                <input type="checkbox" name="tyc" value="Aceptado" required> Acepto los terminos y condiciones.
+                <br><br>
+                <input type="submit" value="Enviar consulta">
+                <button type="reset">Borrar Datos</button>
+            </form>
+            <div class="digital-sale">
+                <h2>DIGITAL</h2>
+                <h2><span class="span5">SALE</span></h2>
+                <img src="img/logo_pequeño.png" alt="DigitalXpress">
+            </div>
+        </article>
+    </main>
+    <footer class="pie-pagina">
+        <section class="top">
+          <img src="img/icono.png" />
+          <ul>
+            <li>
+              <h3>Redes Sociales</h3>
+              <a>Facebook</a>
+              <a>X</a>
+              <a>Instagram</a>
+              <a>Linkedin</a>
+            </li>
+            <li>
+              <h3>About DigitalXpress</h3>
+              <a>Compania</a>
+              <a>T&C</a>
+              <a>Sucursales</a>
+              <a>Preguntas Frecuentes</a>
+            </li>
+          </ul>
+        </section>
+        <section class="bottom">© 2024 DigitalXpress</section>
+      </footer>
+</body>
+</html>
