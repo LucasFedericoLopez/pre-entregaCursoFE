@@ -9,11 +9,13 @@ PARRAFO:   font-family: "Crimson Text", serif;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 html,
 body {
     background-clip: border-box;
@@ -40,9 +42,20 @@ main {
     right: 0;
 }
 
+.logo {
+    flex: 1;
+}
+
 .logo img {
     max-width: 80%;
     height: auto;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    order: 1; 
 }
 
 .nav-links {
@@ -51,6 +64,7 @@ main {
     gap: 20px;
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
+    justify-content: center; 
 }
 
 .nav-links li a {
@@ -65,9 +79,18 @@ main {
     font-size: 18px;
 }
 
+.cart-nav-container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    order: 2;
+}
+
 .nav-inferior {
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: #fff;
     font-family: "Exo 2", sans-serif;
     margin-left: 20px;
@@ -85,6 +108,18 @@ main {
 .nav-inferior h4 {
     font-size: 14px;
 }
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cart-icon img {
+    max-width: 40px;
+    height: auto;
+}
+
 
 .menu-desplegable {
     display: none;
@@ -214,7 +249,10 @@ main {
     border-radius: 30px 60px;
     padding: 0.4em;
 }
-
+.subtitulo1 img{
+    max-width: 30px;
+    margin:auto;
+}
 .card-container1 {
     margin: 0;
     display: flex;
@@ -386,7 +424,6 @@ main {
 }
 
 .card-body {
-
     width: 100%;
     height: 100%;
     top: 0;
@@ -406,6 +443,7 @@ main {
     flex-direction: column;
     justify-content: center;
     transition: 1.5s;
+    overflow-y: auto;
 }
 
 .card:hover .card-body {
@@ -587,6 +625,11 @@ main {
     transform: scale(0.95);
 }
 
+.btn-comprar {
+    all: unset;
+    cursor: pointer;
+}
+
 .icono-inferior {
     position: absolute;
     bottom: 10px;
@@ -749,23 +792,28 @@ main {
     text-align: center;
     color: white;
 }
+
 .digital-sale h2 {
     border-radius: 60px;
     font-size: 8rem;
     font-family: "Exo 2", sans-serif;
     color: #FFEB00;
 }
+
 .span5 {
     display: block;
 }
+
 .digital-sale h2:hover {
     text-shadow: rgba(251, 251, 251, 0.81) 0px 0px 24px;
     cursor: crosshair;
 }
+
 .digital-sale img {
     width: 40%;
     height: auto;
 }
+
 legend {
     font-family: "Exo 2", sans-serif;
     text-align: center;
@@ -849,6 +897,7 @@ input[type="submit"]:hover {
     transform: scale(1.1);
     font-weight: 700;
 }
+
 .pie-pagina {
     margin-top: 30px;
     width: 100%;
@@ -856,61 +905,236 @@ input[type="submit"]:hover {
     background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
     color: #f9f9f9;
     font-family: "Titillium Web", sans-serif;
-  }
-  
-  .pie-pagina section {
+}
+
+.pie-pagina section {
     padding: 0 50px;
-  }
-  
-  section.top {
+}
+
+section.top {
     padding-top: 30px;
     margin-bottom: 48px;
-  }
-  
-  section.top img {
+}
+
+section.top img {
     display: block;
     height: 30px;
     margin: 0 0 30px;
-  }
-  
-  section.top ul {
+}
+
+section.top ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-  }
-  section.top ul li a {
+}
+
+section.top ul li a {
     display: block;
     margin-bottom: 10px;
     color: rgb(255 255 255 / 90%);
-  }
-  
-  section.top h3 {
+}
+
+section.top h3 {
     color: rgb(255 255 255 / 40%);
     font-weight: 400;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
-  }
-  
-  section.bottom {
+}
+
+section.bottom {
     padding-top: 10px;
     border-top: 2px solid rgb(255 255 255 / 10%);
     color: rgb(255 255 255 / 40%);
     font-size: 13px;
-  }
+}
+
+.cardsProd-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-productos {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(249, 232, 51, 1) 0%, rgba(250, 196, 59, 1) 100.2%);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-productos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-productos h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-family: "Exo 2", sans-serif;
+}
+
+.card-productos p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-family: "Crimson Text", serif;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-productos button {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+}
+
+.card-productos button.btn-details {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(237, 3, 32, 0.87) 20.8%, rgba(242, 121, 1, 0.84) 74.4%);
+    color: black;
+}
+
+.card-productos button.btn-details:hover {
+    transform: scale(1.1);
+}
+
+.card-productos button.btn-carrito {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(237, 3, 32, 0.87) 20.8%, rgba(242, 121, 1, 0.84) 74.4%);
+    color: black;
+}
+
+.card-productos button.btn-carrito:hover {
+    transform: scale(1.2);
+}
+
+.description-panel {
+    display: flex;
+    flex-direction: column;        
+    justify-content: flex-start;  
+    margin-top: 10px;
+    padding: 10px;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(249, 232, 51, 1) 0%, rgba(250, 196, 59, 1) 100.2%);
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: justify;
+    font-family: "Crimson Text", serif;
+    width: 100%;
+}
+
+.description-panel p {
+    margin-bottom: 10px; 
+}
+
+.description-panel a {
+    text-decoration: none;
+}
+
+.btn-ver {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 1s;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(237, 3, 32, 0.87) 20.8%, rgba(242, 121, 1, 0.84) 74.4%);
+    color: black;
+    display: block;           
+    width: 100%;                
+    text-align: center;          
+    margin: 10px auto 0 auto;    
+}
+
+
+
+.btn-ver:hover {
+    transform: scale(1.1);
+}
+
+
+#cart-container {
+    display: none; 
+    position: fixed;
+    color: white;
+    top: 72px;
+    right: 50px;
+    width: 300px;
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+}
+#cart-container h2{
+    font-family: "Exo 2", sans-serif;
+    font-size: 2vw;
+}
+#cart-list {
+    list-style: none;
+    padding: 0;
+    font-family: "Crimson Text", serif;
+    font-size: 1vw;
+}
+
+#cart-clear {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2vw;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+    transition: transform 1s;
+    width: 90%;
+}
+
+#cart-clear:hover {
+    background-color: #e60000;
+    color: black;
+    font-size: 1.4vw;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
 @media (max-width: 767px) {
     .nav-links {
+        background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
         display: none;
         flex-direction: column;
         position: absolute;
         top: 70px;
         right: 0;
-        background-color: rgba(15, 2, 2, 1);
         width: 100%;
         text-align: center;
+    }
+
+    .nav-options {
+        font-size: 20px;
     }
 
     .nav-links li {
@@ -923,6 +1147,7 @@ input[type="submit"]:hover {
 
     .menu-desplegable {
         display: block;
+
     }
 
     .nav-active .nav-links {
@@ -934,8 +1159,18 @@ input[type="submit"]:hover {
     }
 
     .titulo1 {
-        font-size: 8vw;
+        font-size: 20vw;
         letter-spacing: 1vw;
+    }
+
+    .titulo11 {
+        font-size: 20vw;
+        letter-spacing: 1vw;
+    }
+
+    .btn1 button {
+        font-size: 30px;
+        
     }
 
     .btn button {
@@ -1087,26 +1322,57 @@ input[type="submit"]:hover {
         height: auto;
         margin: 0 0 20px 30px;
     }
+
     .digital-sale h2 {
         font-size: 6rem;
     }
+
     footer article {
         flex-direction: row;
         min-height: 140px;
         margin: -70px 20px 20px;
         padding: 30px 50px 30px;
-      }
-    
-      footer article button {
+    }
+
+    footer article button {
         width: auto;
         padding: 0 20px 0 24px;
-      }
-    
-      section.top ul {
+    }
+
+    section.top ul {
         grid-template-columns: repeat(4, 1fr);
         padding-right: 0;
-      }
+    }
 
+    .cardsProd-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .card-productos h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-productos p {
+        font-size: 1rem;
+    }
+
+    .card-productos button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    #cart-container h2{
+        font-size: 6vw;
+    }
+    #cart-container ul{
+        font-size: 4vw;
+    }
+    #cart-clear{
+        font-size: 4vw;
+    }
+    #cart-clear:hover{
+        font-size: 5vw;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1123,6 +1389,7 @@ input[type="submit"]:hover {
         font-size: 14px;
         margin: 30px 0;
     }
+
     .form-container {
         width: 90%;
         margin: 20px auto;
@@ -1134,6 +1401,7 @@ input[type="submit"]:hover {
         height: auto;
         margin: 0 0 20px 30px;
     }
+
     .digital-sale h2 {
         font-size: 6rem;
     }

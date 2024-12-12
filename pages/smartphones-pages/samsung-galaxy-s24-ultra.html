@@ -21,17 +21,24 @@
             <div class="logo">
                 <a href="../../index.html"><img src="../../img/icono.png" alt="Logo DigitalXpress"></a>
             </div>
-            <ul class="nav-links">
-                <li><a href="../..//index.html">Inicio</a></li>
-                <li><a href="../../index.html#productos">Productos</a></li>
-                <li><a href="../../index.html#reseñas">Reseñas</a></li>
-                <li><a href="../../index.html#contacto">Contacto</a></li>
-            </ul>
-            <div class="nav-inferior">
-                <h2>DIGITAL</h2>
-                <h4>XPRESS INC.</h4>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="../../index.html"><span class="nav-options">Inicio</span></a></li>
+                    <li><a href="../../pages/productos.html"><span class="nav-options">Productos</span></a></li>
+                    <li><a href="../../index.html#reseñas"><span class="nav-options">Reseñas</span></a></li>
+                    <li><a href="../../index.html#contacto"><span class="nav-options">Contacto</span></a></li>
+                </ul>
             </div>
-            <div class="menu-desplegable">
+            <div class="cart-nav-container">
+                <div class="cart-icon">
+                    <a href="../../pages/productos.html" id="cart-btn"><img src="../../img/shopping-cart.png" alt="Carrito"></a>
+                </div>
+                <div class="nav-inferior">
+                    <h2>DIGITAL</h2>
+                    <h4>XPRESS INC.</h4>
+                </div>
+            </div>
+            <div class="menu-desplegable" onclick="toggleMenu()">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -79,7 +86,7 @@
                         </div>
                         <div class="boton-carrito">
                             <button>
-                                <h2>Añadir Al Carrito</h2>
+                                <a href="../../pages/productos.html" class="btn-comprar"><h2>Comprar Ahora</h2></a>
                             </button>
                         </div>
                     </div>
@@ -157,6 +164,7 @@
             </section>
 
     </main>
+    <script src="../../script.js"></script>
 </body>
 
 </html>

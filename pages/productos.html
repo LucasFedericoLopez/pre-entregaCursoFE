@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalXpress</title>
+  <link rel="icon" href="../img/icono.png" type="imagen/x-icon">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/icono.png" alt="Logo DigitalXpress"></a>
+        </div>
+        <div class="nav-center">
+          <ul class="nav-links">
+            <li><a href="../index.html"><span class="nav-options">Inicio</span></a></li>
+            <li><a href="productos.html"><span class="nav-options">Productos</span></a></li>
+            <li><a href="../index.html#reseñas"><span class="nav-options">Reseñas</span></a></li>
+            <li><a href="../index.html#contacto"><span class="nav-options">Contacto</span></a></li>
+          </ul>
+        </div>
+        <div class="cart-nav-container">
+          <div class="cart-icon">
+            <a href="#" id="cart-btn"><img src="../img/shopping-cart.png" alt="Carrito"></a>
+          </div>
+          <div class="nav-inferior">
+            <h2>DIGITAL</h2>
+            <h4>XPRESS INC.</h4>
+          </div>
+        </div>
+        <div class="menu-desplegable" onclick="toggleMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      </nav>
+    </header>
+    <h2 class="subtitulo1"><span class="span3">TODOS LOS PRODUCTOS <img src="/img/fuego.png" alt="Fuego"></span></h2>
+    <div class="cardsProd-container"></div>
+
+    <div id="cart-container">
+      <h2>Carrito de compras</h2>
+      <ul id="cart-list"></ul> 
+      <p id="cart-total">Total: $0</p> 
+      <button id="cart-clear">Vaciar carrito</button>
+    </div>
+
+    <footer class="pie-pagina">
+      <section class="top">
+        <img src="../img/icono.png" />
+        <ul>
+          <li>
+            <h3>Redes Sociales</h3>
+            <a>Facebook</a>
+            <a>X</a>
+            <a>Instagram</a>
+            <a>Linkedin</a>
+          </li>
+          <li>
+            <h3>About DigitalXpress</h3>
+            <a>Compania</a>
+            <a>T&C</a>
+            <a>Sucursales</a>
+            <a>Preguntas Frecuentes</a>
+          </li>
+        </ul>
+      </section>
+      <section class="bottom">© 2024 DigitalXpress</section>
+    </footer>
+
+    <script src="../script.js"></script> 
+  </body>
+
+
+</html>
